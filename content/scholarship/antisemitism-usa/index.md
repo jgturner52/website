@@ -4,4 +4,4 @@ link: "https://www.r2studios.org/show/Antisemitism-USA/"
 weight: 1
 ---
 
-A collaborative podcast about the history of American antisemitism, produced by R2 Studios at the Roy Rosenzweig Center for History and New Media.
+Collaborative podcast with Lincoln Mullen, Jeanette Patrick, Jim Ambuske, Britt Tevis, and Mark Oppenheimer examining the history of antisemitism in the United States. Produced by R2 Studios at the Roy Rosenzweig Center for History and New Media.

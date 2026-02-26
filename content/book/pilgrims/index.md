@@ -7,10 +7,10 @@ year: 2020
 isbn: ""
 pull_quotes:
   - author: "Margaret Bendroth"
-    quote: "Turner takes readers deep into the complex world the Pilgrims inhabited, giving an old familiar story remarkable new life and power. The story he tells is at once entertaining, erudite, and wonderfully human."
+    quote: "Turner takes readers deep into the complex world the Pilgrims inhabited, giving an old familiar story new life."
 purchase_links:
   - name: "Yale Books"
-    url: "https://yalebooks.yale.edu/book/9780300246995/they-knew-they-were-pilgrims/"
+    url: "https://yalebooks.yale.edu/book/9780300225501/they-knew-they-were-pilgrims"
   - name: "Amazon"
-    url: "https://www.amazon.com/They-Knew-Were-Pilgrims-Plymouth/dp/0300246994/"
+    url: "https://www.amazon.com/They-Knew-Were-Pilgrims-Plymouth/dp/0300225504/"
 ---

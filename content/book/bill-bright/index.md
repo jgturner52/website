@@ -7,10 +7,10 @@ year: 2008
 isbn: ""
 pull_quotes:
   - author: "The Journal of American History"
-    quote: "[An] intelligently contextualized biography ... Turner has done a wonderful job of bringing Bill Bright out of the shadow of Billy Graham and thereby greatly enhancing our understanding of the new evangelicalism."
+    quote: "Turner has done a wonderful job bringing Bill Bright out of Billy Graham's shadow, greatly enhancing understanding."
 purchase_links:
   - name: "UNC Press"
-    url: "https://uncpress.org/book/9780807832387/bill-bright-campus-crusade-for-christ/"
+    url: "https://uncpress.org/book/9780807858738/"
   - name: "Amazon"
-    url: "https://www.amazon.com/Bill-Bright-Campus-Crusade-Christ/dp/0807858889/"
+    url: "https://www.amazon.com/Bill-Bright-Campus-Crusade-Christ/dp/0807858730"
 ---

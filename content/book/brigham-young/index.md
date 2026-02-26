@@ -7,10 +7,10 @@ year: 2012
 isbn: ""
 pull_quotes:
   - author: "Alex Beam, The New York Times Book Review"
-    quote: "Brigham Young is a landmark work... There is no aspect of Young's fascinating life that eludes Turner's scrutiny."
+    quote: "Brigham Young is a landmark work… There is no aspect of Young's life that eludes Turner's scrutiny."
 purchase_links:
   - name: "Harvard University Press"
-    url: "https://www.hup.harvard.edu/catalog.php?isbn=9780674049673"
+    url: "https://www.hup.harvard.edu/catalog.php?isbn=9780674416857"
   - name: "Amazon"
-    url: "https://www.amazon.com/Brigham-Young-Pioneer-Prophet-Turner/dp/0674049675/"
+    url: "https://www.amazon.com/gp/product/0674416856/"
 ---

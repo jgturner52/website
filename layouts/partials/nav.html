@@ -1,13 +1,15 @@
 <header>
-  <h1><a href="/">{{ .Site.Title }}</a></h1>
+  <div class="d-flex justify-content-between align-items-baseline">
+    <h1><a href="/">{{ .Site.Title }}</a></h1>
+    <nav>
+      <ul class="nav">
+        {{- range .Site.Menus.main }}
+        <li class="nav-item">
+          <a class="nav-link{{ if eq $.RelPermalink .URL }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
   <hr>
-  <nav>
-    <ul class="nav">
-      {{- range .Site.Menus.main }}
-      <li class="nav-item">
-        <a class="nav-link{{ if eq $.RelPermalink .URL }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{- end }}
-    </ul>
-  </nav>
 </header>

@@ -28,14 +28,15 @@ header hr {
 
 /* Navigation */
 .nav-link {
-  color: #333;
-  padding-left: 0;
-  padding-right: 1rem;
+  color: #992a2a;
+  padding-left: 0.5rem;
+  padding-right: 0;
+  text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #992a2a;
+  color: #6e1e1e;
 }
 
 /* Links */
@@ -64,8 +65,8 @@ a:hover {
 
 .book-quote {
   font-style: italic;
-  border-left: 3px solid #ccc;
-  padding-left: 1rem;
+  border-left: none;
+  padding-left: 0;
   margin: 0.75rem 0;
 }
 
