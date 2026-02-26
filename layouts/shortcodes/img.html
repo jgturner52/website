@@ -1,0 +1,8 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $width := .Get "width" | default "440" -}}
+{{- $class := .Get "class" | default "img-fluid" -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- if $img -}}
+  {{- partial "processed-image.html" (dict "img" $img "width" (int $width) "alt" $alt "class" $class) -}}
+{{- end -}}

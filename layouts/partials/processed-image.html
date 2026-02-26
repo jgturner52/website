@@ -1,0 +1,11 @@
+{{- $img := .img -}}
+{{- $width := .width | default 440 -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $img1x := $img.Resize (printf "%dx" $width) -}}
+{{- $img2x := $img.Resize (printf "%dx" (mul $width 2)) -}}
+<img src="{{ $img1x.RelPermalink }}"
+     srcset="{{ $img1x.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+     width="{{ $img1x.Width }}" height="{{ $img1x.Height }}"
+     alt="{{ $alt }}"
+     {{- with $class }} class="{{ . }}"{{ end }}>

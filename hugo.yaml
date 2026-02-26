@@ -1,0 +1,29 @@
+baseURL: "https://johngturner.com/"
+languageCode: "en-us"
+title: "John G. Turner"
+
+params:
+  description: "John G. Turner is a historian of American religion."
+  subtitle: "Historian of American Religion"
+  author:
+    name: "John G. Turner"
+    email: "jgturner52@gmail.com"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "Media"
+      url: "/media/"
+      weight: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies: {}

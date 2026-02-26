@@ -1,0 +1,31 @@
+<div class="book-card row mb-5">
+  <div class="col-md-3">
+    {{- $cover := .Resources.GetMatch "cover.*" -}}
+    {{- if $cover -}}
+      {{- $firstLink := index .Params.purchase_links 0 -}}
+      <a href="{{ $firstLink.url }}">
+        {{- partial "processed-image.html" (dict "img" $cover "width" 220 "alt" (printf "Cover of %s" .Title) "class" "img-fluid book-cover") -}}
+      </a>
+    {{- end }}
+  </div>
+  <div class="col-md-9">
+    <h3 class="book-title">{{ .Title }}</h3>
+    {{- with .Params.tagline }}
+    <p class="book-tagline">{{ . }}</p>
+    {{- end }}
+    {{- range .Params.pull_quotes }}
+    <blockquote class="book-quote">
+      <p>"{{ .quote }}"</p>
+      <footer>{{ .author }}</footer>
+    </blockquote>
+    {{- end }}
+    <ul class="list-inline book-links">
+      {{- range .Params.purchase_links }}
+      <li class="list-inline-item"><a href="{{ .url }}">{{ .name }}</a></li>
+      {{- end }}
+    </ul>
+    {{- with .Content }}
+    <div class="book-body">{{ . }}</div>
+    {{- end }}
+  </div>
+</div>

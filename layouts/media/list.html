@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+
+{{ $topics := slice
+  "Antisemitism, U.S.A.: A History Podcast"
+  "Joseph Smith: The Rise and Fall of an American Prophet"
+  "They Knew They Were Pilgrims"
+  "The Mormon Jesus: A Biography"
+  "Brigham Young: Pioneer Prophet"
+  "Other Lectures"
+}}
+
+{{ range $topic := $topics }}
+  {{ $items := where $.Pages ".Params.topic" $topic }}
+  {{ if $items }}
+  <h3 class="mt-4">{{ $topic }}</h3>
+  {{ range sort $items ".Params.weight" }}
+    {{ partial "media-item.html" . }}
+  {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

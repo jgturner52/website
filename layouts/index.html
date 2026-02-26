@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="homepage-intro mb-4">
+  {{ .Content }}
+</div>
+
+<section class="books">
+  {{- range (where .Site.RegularPages "Section" "book").ByWeight }}
+  {{ partial "book-card.html" . }}
+  {{- end }}
+</section>
+
+{{- $scholarship := (where .Site.RegularPages "Section" "scholarship").ByWeight }}
+{{- if $scholarship }}
+<section class="scholarship mt-5">
+  <h2>Current Scholarship</h2>
+  {{- range $scholarship }}
+  {{ partial "scholarship-card.html" . }}
+  {{- end }}
+</section>
+{{- end }}
+{{ end }}

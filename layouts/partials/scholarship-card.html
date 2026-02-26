@@ -1,0 +1,24 @@
+<div class="scholarship-card row mb-4">
+  {{- $thumbnail := .Resources.GetMatch "thumbnail.*" -}}
+  {{- if $thumbnail }}
+  <div class="col-md-3">
+    {{- if .Params.link }}
+    <a href="{{ .Params.link }}">
+      {{- partial "processed-image.html" (dict "img" $thumbnail "width" 180 "alt" .Title "class" "img-fluid scholarship-thumbnail") -}}
+    </a>
+    {{- else }}
+      {{- partial "processed-image.html" (dict "img" $thumbnail "width" 180 "alt" .Title "class" "img-fluid scholarship-thumbnail") -}}
+    {{- end }}
+  </div>
+  <div class="col-md-9">
+  {{- else }}
+  <div class="col-12">
+  {{- end }}
+    <h4>
+      {{- if .Params.link }}<a href="{{ .Params.link }}">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end -}}
+    </h4>
+    {{- with .Content }}
+    <div class="scholarship-body">{{ . }}</div>
+    {{- end }}
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="media-item">
+  {{- if .Params.youtube_id }}
+  <p class="mb-1">
+    <strong>{{ .Title }}</strong>
+    {{- with .Params.source }} &mdash; {{ . }}{{ end }}
+  </p>
+  <div class="ratio ratio-16x9 mb-3" style="max-width: 640px;">
+    <iframe src="https://www.youtube.com/embed/{{ .Params.youtube_id }}"
+            title="{{ .Title }}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+  </div>
+  {{- else }}
+  <p>
+    {{- if .Params.link }}
+    <a href="{{ .Params.link }}">{{ .Title }}</a>
+    {{- else }}
+    {{ .Title }}
+    {{- end }}
+    {{- with .Params.source }} &mdash; {{ . }}{{ end }}
+  </p>
+  {{- end }}
+  {{- with .Content }}{{ . }}{{ end }}
+</div>
